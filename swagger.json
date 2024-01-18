@@ -8,12 +8,13 @@
   "host": "cse341-bp4h.onrender.com",
   "basePath": "/",
   "schemes": [
-   
     "https"
+    
   ],
   "paths": {
     "/": {
       "get": {
+        "tags": ["Hello World"],
         "description": "",
         "responses": {
           "200": {
@@ -34,7 +35,7 @@
     },
     "/users/": {
       "get": {
-        "tags": [],
+        "tags": ["users"],
         "description": "",
         "produces": [
           "application/json"
@@ -46,7 +47,7 @@
         }
       },
       "post": {
-        "tags": [],
+        "tags": ["users"],
         "description": "",
         "parameters": [
           {
@@ -83,7 +84,7 @@
     },
     "/users/{id}": {
       "get": {
-        "tags": [],
+        "tags": ["users"],
         "description": "",
         "produces": [
           "application/json"
@@ -106,7 +107,7 @@
         }
       },
       "put": {
-        "tags": [],
+        "tags": ["users"],
         "description": "",
         "parameters": [
           {
@@ -126,7 +127,7 @@
         }
       },
       "delete": {
-        "tags": [],
+        "tags": ["users"],
         "description": "",
         "parameters": [
           {
